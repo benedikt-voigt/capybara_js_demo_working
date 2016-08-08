@@ -18,7 +18,7 @@ class CreateFooTest < Capybara::Rails::TestCase
     click_on 'New Foo'
     fill_in 'Name', with: 'Bar'
     click_on 'Create Foo'
-    assert_content page, 'Foo was successfully created.'
+    page.assert_text 'Foo was successfully created.'
     DatabaseCleaner.clean
   end
 end
