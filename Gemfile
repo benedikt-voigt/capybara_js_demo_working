@@ -38,8 +38,9 @@ end
 group :test do
   gem 'minitest-rails-capybara'
   gem 'selenium-webdriver'
-  gem 'database_cleaner'
   gem 'launchy'
+  gem 'connection_pool'
+  gem 'minitest-reporters'
 end
 
 group :development do
